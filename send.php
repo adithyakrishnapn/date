@@ -12,7 +12,7 @@ if (isset($_POST["send"])) {
     $smtpHost = 'ssl://smtp.gmail.com';
     $smtpPort = 465;
     $smtpUser = 'dragoncorexgamer@gmail.com';
-    $smtpPass = 'noojxldfsynvrqaj';  // Your App Password
+    $smtpPass = '';  // Your App Password
 
     $socket = stream_socket_client("$smtpHost:$smtpPort", $errno, $errstr, 30);
     if (!$socket) {
